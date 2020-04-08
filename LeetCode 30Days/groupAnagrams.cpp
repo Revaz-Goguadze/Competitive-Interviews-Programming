@@ -17,14 +17,26 @@ using namespace std;
 #define rep(i , j , n) for(ll i = j ; i <= n ; i++)
 #define per(i , j , n) for(ll i = j ; i >= n ; i--)
 
-void groupAnagrams(vector<string>& strs) {
-    cout << strs[0] << "\n";   
-    return {{"1"}};     
+vector<vector<string>> groupAnagrams(vector<string>& strs) {
+    vector<vector<string>> res;
+    vector<string> tmp;
+    unordered_map<string,vector<string>> map;
+    for(auto it = strs.begin(); it != strs.end(); it++){
+        string x = *it; 
+        sort(x.begin(),x.end());
+        if(map.find(x) ==  map.end()){ map[x] = tmp; }
+        map[x].emplace_back(*it);
+    }
+     for(auto i: map){
+        res.emplace_back(i.second);       
+    }
+    return res;
+
 }
 
 int main() {
     SPEED;
-    vector<string> vec {"a"};
-    cout << groupAnagrams(vec);
+    vector<string> vec {"eat", "tea", "tan", "ate", "nat", "bat"};
+    groupAnagrams(vec);
     return 0;
 }

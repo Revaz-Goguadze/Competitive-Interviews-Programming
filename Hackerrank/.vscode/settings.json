@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.cs": "csharp",
+        "utility": "cpp",
+        "unordered_map": "cpp"
+    }
+}

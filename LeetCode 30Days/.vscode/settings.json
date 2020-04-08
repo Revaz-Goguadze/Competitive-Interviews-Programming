@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.cs": "csharp",
+        "vector": "cpp",
+        "iosfwd": "cpp",
+        "unordered_set": "cpp"
+    }
+}

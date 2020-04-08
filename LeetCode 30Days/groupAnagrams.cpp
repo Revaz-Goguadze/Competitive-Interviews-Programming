@@ -1,3 +1,4 @@
+//!https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3288/
 #include <bits/stdc++.h>
 using namespace std;
 #define SPEED ios::sync_with_stdio(false); cin.tie(0); cout.tie(0)
@@ -16,11 +17,14 @@ using namespace std;
 #define rep(i , j , n) for(ll i = j ; i <= n ; i++)
 #define per(i , j , n) for(ll i = j ; i >= n ; i--)
 
-
+void groupAnagrams(vector<string>& strs) {
+    cout << strs[0] << "\n";   
+    return {{"1"}};     
+}
 
 int main() {
     SPEED;
- 
-
+    vector<string> vec {"a"};
+    cout << groupAnagrams(vec);
     return 0;
 }

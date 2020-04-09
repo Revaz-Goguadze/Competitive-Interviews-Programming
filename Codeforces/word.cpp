@@ -19,14 +19,24 @@ using namespace std;
 
 void solve(){
 
+    int count = 0;
+    string s;
+    cin >> s;
+    for(auto x: s){
+        if(islower(x)){ count++; }
+    }
+
+    if(s.size() - count > count){
+        for(int i = 0; i < s.size(); i++){ s[i]=toupper(s[i]); }
+    }else{
+        for(int i = 0; i < s.size(); i++){ s[i]=tolower(s[i]); }
+    }
     
+    cout << s;
     cout <<"\n";
 }
 int main() {
     SPEED;
-    int t;
-    cin >> t;
-    while(t--)
-        solve();
+    solve();
     return 0;
 }

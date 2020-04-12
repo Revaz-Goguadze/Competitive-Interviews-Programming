@@ -1,37 +1,31 @@
 #include<bits/stdc++.h>
 class MinStack {
-    vector<int> min;
-    vector<int> stack;
+    vector<int> minV;
+    vector<int> s;
 public:
     /** initialize your data structure here. */
     MinStack() {
     }
     
     void push(int x) {
-        stack.emplace_back(x);
-        if(min.empty()  || min.back() >= x){
-            min.emplace_back(x);
+        s.emplace_back(x);
+        if(minV.empty()  || x < minV.back()){
+            minV.emplace_back(x);
         }
     }
     
     void pop() {
-        if(stack.back() == min.back()){
-            stack.pop_back();
+        if(s.back() == minV.back()){
+            s.pop_back();
         }
-        stack.pop_back();
+        s.pop_back();
     }
     
     int top() {
-       if(!stack.empty()){
-           return stack.back();
-       }
-       return -1;
+       return !s.empty() ? s.back():-1;
     }
     
-    int getMin() {
-        if(!min.empty()){
-            return min.back();
-        }
-        return -1;
+    int getmin() {
+        return !minV.empty() ? minV.back():-1;
     }
 };

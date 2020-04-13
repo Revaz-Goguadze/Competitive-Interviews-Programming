@@ -18,10 +18,12 @@ using namespace std;
 #define per(i , j , n) for(ll i = j ; i >= n ; i--)
 
 vector<vector<int>> flipAndInvertImage(vector<vector<int>>& A) {
-    for(auto x: A){
-        reverse(x.begin(),x.end());
-        for(auto i: x){
-            i^=1;
+
+    //Para cada linea se voltea y se aplica Xor de 1 para invertir signo
+    for(int i = 0; i<A.size(); i++){
+        reverse(A[i].begin(), A[i].end());
+        for(int j = 0; j < A[i].size(); j++){
+            A[i][j]^=1;
         }
     }
     return A;

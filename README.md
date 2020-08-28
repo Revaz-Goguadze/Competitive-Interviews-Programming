@@ -1,15 +1,25 @@
-# CP
-All of my solutions to a variety of problems from Codeforces, LeetCode, Hackerrank, Codechef and different Competitions
 
-## Purpose
+# Competitive Programming and Interviews
+![Repo banner](https://wallpapercave.com/wp/wp1984014.png)
 
-I want to challenge myself and see how far I can go. This repository will help me to keep track of where I begun so when I come back and see this, be proud of my Journey.
+## Background
+
+At the beginning I did not take it so seriously and my general knowledge of other technologies was quite limited so now that I have acquired more skills I have decided to start from scratch and really have a study guide.
+
+So if you want to checkout my newest solutions and how I'm  going you can checkout either [Fresh Start](https://github.com/S4ND1X/Competitive-Interviews-Programming/tree/master/Fresh%20Start)  or [AlgoExpert](https://github.com/S4ND1X/Competitive-Interviews-Programming/tree/master/AlgoExpert) folders.
+
+I'm keeping track of my progress using **Dr Mostafa Saad Ibrahim** [Training Sheet](https://docs.google.com/spreadsheets/d/1iJZWP2nS_OB3kCTjq8L6TrJJ4o-5lhxDOyTaocSYc-k/edit#gid=123190759), so if you want to checkout my current progress you can do it on the following [sheet](https://docs.google.com/spreadsheets/d/15uWAt2c561fYefbGcdLXA6xrv0KEx73iFstaQOWRAsg/edit?usp=sharing).
 
 ## Tools
-For all my problems 'll be using **C++17**, and just to keep record if this. 
+
+For all my problems 'll be using **C++17**, and just to keep record if this.
+
 **Compiler arguments:**
-*Compile (F8):* `g++ -std=c++17 -Wshadow -Wall -o "%e" "%f" -O2 -Wno-unused-result`  
-*Build (F9)*: `g++ -std=c++17 -Wshadow -Wall -o "%e" "%f" -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG`  
+
+*Compile (F8):*  `g++ -std=c++17 -Wshadow -Wall -o "%e" "%f" -O2 -Wno-unused-result`
+
+*Build (F9)*: `g++ -std=c++17 -Wshadow -Wall -o "%e" "%f" -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG`
+
 If you get compilation errors, try changing from c++17 to c++14 and/or removing sanitizers (two fsanitize flags).
 
 **C++17 Template:**
@@ -28,32 +38,33 @@ If you get compilation errors, try changing from c++17 to c++14 and/or removing 
     #define eps 0.00001
     #define le length
     #define debug(n1) cout << n1 << endl
-    #define rep0(i,n) for (i = 0; i < n; ++i) 
+    #define rep0(i,n) for (i = 0; i < n; ++i)
     #define rep(i , j , n) for(ll i = j ; i <= n ; i++)
     #define per(i , j , n) for(ll i = j ; i >= n ; i--)
-    
     int main() {
-        SPEED;
-        return 0;
+    SPEED;
+    
+    return 0;
     }
 
-## Study Resources
+  
 
- 1. cp-algorithms.com
- 2. projecteuler.net
- 3. geeksforgeeks.org
- 4. youtube.com/channel/UCBr_Fu6q9iHYQCh13jmpbrg
- 5. youtube.com/channel/UCKuDLsO0Wwef53qdHPjbU2Q
+## Theory Resources
 
+
+1. [Competitive Programmer’s Handbook](https://cses.fi/book/book.pdf)
+2. [Math/DS Algorithms](http://cp-algorithms.com)
+3.  [Leetcode](https://leetcode.com)
+
+
+ 
 ## Practice Resources
 
- 1. leetcode.com
- 2. codeforces.com
- 3. codechef.com
- 4. hackerrank.com
- 
 
+1. [https://codeforces.com/](https://codeforces.com)
+2. [https://leetcode.com/](https://leetcode.com)
 
 ## Credits
 
  - https://github.com/Errichto/youtube/wiki/Linux-setup
+ - [https://docs.google.com/spreadsheets/d/1-n9Fnvhsnvsqh-IerE_yyIshw5RUNer_7EjwF_GW-TA](https://docs.google.com/spreadsheets/d/1-n9Fnvhsnvsqh-IerE_yyIshw5RUNer_7EjwF_GW-TA)

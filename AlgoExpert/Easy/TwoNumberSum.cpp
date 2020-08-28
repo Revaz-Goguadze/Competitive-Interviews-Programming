@@ -35,7 +35,7 @@ vector<int> twoNumberSum(vector<int> array, int target)
     }
     return {};
 
-    /*
+    /* Improvements
     * Using set instead of map, we only need previous number and current one
     * if (set.find(target - x) != set.end()), in this case we ensure not habing duplicates because of set properties
     */

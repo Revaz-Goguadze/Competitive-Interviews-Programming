@@ -1,5 +1,8 @@
 
 # Competitive Programming and Interviews
+In this repository you can find the problems that I have solved to date, competitive programming and interviews.
+
+
 ![Repo banner](https://wallpapercave.com/wp/wp1984014.png)
 
 ## Background

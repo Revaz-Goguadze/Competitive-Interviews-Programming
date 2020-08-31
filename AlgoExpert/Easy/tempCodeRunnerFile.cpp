@@ -1,0 +1,1 @@
+arrMapping.find(x) != arrMapping.end()

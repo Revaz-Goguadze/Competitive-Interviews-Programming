@@ -53,7 +53,7 @@ bool solve(vector<int> arr, vector<int> sequence)
     }
 
     return seqIndex == sequence.size();
-}
+}   
 
 int main()
 {

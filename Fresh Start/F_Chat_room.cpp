@@ -20,20 +20,33 @@ using namespace std;
 #define rep(i, j, n) for (ll i = j; i <= n; i++)
 #define per(i, j, n) for (ll i = j; i >= n; i--)
 
+string solve(string s)
+{
+
+    string target = "hello";
+    string res = "";
+    
+    int i = 0;
+    for (char c : s)
+    {
+        if (c == target[i])
+        {
+            res += c;
+            i++;
+        }
+    }
+
+    return target.compare(res) ? "NO" : "YES";
+}
+
 int main()
 {
     SPEED;
 
-    int t, a, b, c, res = 0;
+    string s;
+    cin >> s;
 
-    cin >> t;
-    while (t--)
-    {
-        cin >> a >> b >> c;
-        if ((a + b + c) > 1)
-            res++;
-    }
-    cout << res << "\n";
+    cout << solve(s) << "\n";
 
     return 0;
 }

@@ -20,20 +20,30 @@ using namespace std;
 #define rep(i, j, n) for (ll i = j; i <= n; i++)
 #define per(i, j, n) for (ll i = j; i >= n; i--)
 
+string solve(string s)
+{
+
+    if (s.size() <= 10)
+    {
+        return s;
+    }
+
+    return s[0] + to_string(s.size()-2) + s[s.size() - 1];
+}
+
 int main()
 {
     SPEED;
-
-    int t, a, b, c, res = 0;
-
+    int t;
     cin >> t;
     while (t--)
     {
-        cin >> a >> b >> c;
-        if ((a + b + c) > 1)
-            res++;
+
+        string s;
+        cin >> s;
+
+        cout << solve(s) << "\n";
     }
-    cout << res << "\n";
 
     return 0;
 }

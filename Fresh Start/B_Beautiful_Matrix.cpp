@@ -24,16 +24,18 @@ int main()
 {
     SPEED;
 
-    int t, a, b, c, res = 0;
-
-    cin >> t;
-    while (t--)
+    int x = 0;
+    for (int i = 0; i < 5; ++i)
     {
-        cin >> a >> b >> c;
-        if ((a + b + c) > 1)
-            res++;
+        for (int j = 0; j < 5; ++j)
+        {
+            cin >> x;
+            if (x == 1)
+            {
+                cout << abs(i - 3 + 1) + abs(j - 3 + 1) << endl;
+            }
+        }
     }
-    cout << res << "\n";
 
     return 0;
 }

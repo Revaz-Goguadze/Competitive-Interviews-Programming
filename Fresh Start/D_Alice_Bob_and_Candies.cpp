@@ -20,20 +20,38 @@ using namespace std;
 #define rep(i, j, n) for (ll i = j; i <= n; i++)
 #define per(i, j, n) for (ll i = j; i >= n; i--)
 
+int solve(vector<int> candies)
+{
+    int left = 0, right = candies.size() - 1;
+    int contLeft, contRight = 0;
+    int moves = 0;
+    while (left < right)
+    {
+        if (contLeft <= contRight)
+        {
+        }
+    }
+
+    return 0;
+}
+
 int main()
 {
     SPEED;
 
-    int t, a, b, c, res = 0;
-
+    int t;
     cin >> t;
+
     while (t--)
     {
-        cin >> a >> b >> c;
-        if ((a + b + c) > 1)
-            res++;
+        cin >> n;
+        vector<int> candies(n);
+        for (int i = 0; i < n; i++)
+        {
+            cin >> candies[i];
+        }
+        solve(candies);
     }
-    cout << res << "\n";
 
     return 0;
 }

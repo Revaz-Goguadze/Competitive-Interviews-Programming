@@ -20,20 +20,24 @@ using namespace std;
 #define rep(i, j, n) for (ll i = j; i <= n; i++)
 #define per(i, j, n) for (ll i = j; i >= n; i--)
 
+int solve(vector<int>, int)
+{
+
+    return 0;
+}
+
 int main()
 {
     SPEED;
 
-    int t, a, b, c, res = 0;
-
+    int t;
     cin >> t;
+
     while (t--)
     {
-        cin >> a >> b >> c;
-        if ((a + b + c) > 1)
-            res++;
     }
-    cout << res << "\n";
+
+    cout << solve() << "\n";
 
     return 0;
 }

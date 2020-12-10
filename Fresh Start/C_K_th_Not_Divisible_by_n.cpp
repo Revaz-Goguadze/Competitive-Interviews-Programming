@@ -20,20 +20,25 @@ using namespace std;
 #define rep(i, j, n) for (ll i = j; i <= n; i++)
 #define per(i, j, n) for (ll i = j; i >= n; i--)
 
+int solve(int n, int k)
+{
+
+    return (k - 1) * (n / (n - 1));
+}
+
 int main()
 {
     SPEED;
 
-    int t, a, b, c, res = 0;
-
+    int t;
+    int k, n;
     cin >> t;
+
     while (t--)
     {
-        cin >> a >> b >> c;
-        if ((a + b + c) > 1)
-            res++;
+        cin >> n >> k;
+        cout << solve(n, k) << "\n";
     }
-    cout << res << "\n";
 
     return 0;
 }

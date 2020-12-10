@@ -20,20 +20,48 @@ using namespace std;
 #define rep(i, j, n) for (ll i = j; i <= n; i++)
 #define per(i, j, n) for (ll i = j; i >= n; i--)
 
+string solve(int n, vector<bool> &seen)
+{
+
+    
+
+    for (auto flag : seen)
+    {
+
+        if (!flag)
+        {
+            return "Oh, my keyboard!";
+        }
+    }
+
+    return "I become the guy.";
+}
+
 int main()
 {
     SPEED;
+   
+    vector<bool> seen(n, false);
+    int n, x;
+    cin >> n;
+    int p;
+    cin >> p;
 
-    int t, a, b, c, res = 0;
-
-    cin >> t;
-    while (t--)
+    for (int i = 0; i < p; i++)
     {
-        cin >> a >> b >> c;
-        if ((a + b + c) > 1)
-            res++;
+        cin >> x;
+        seen[x - 1] = true;
     }
-    cout << res << "\n";
+    int q;
+    cin >> q;
+
+    for (int i = 0; i < q; i++)
+    {
+        cin >> x;
+        seen[x - 1] = true;
+    }
+
+    cout << solve(n, seen);
 
     return 0;
 }
